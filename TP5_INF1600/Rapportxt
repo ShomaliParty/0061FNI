@@ -1,0 +1,41 @@
+Exercice 2
+
+La taille de la memoire cache est de 16kB; les lignes sont de taille de 16B. Il y a donc 1000 lignes dans la memoire cache.
+De meme, suivant le meme raisonnement, la memoire principale a une taille de 1024kB et donc le nombre de lignes dans la memoire principale est de 64 000. Une ligne est 16B = 2^4B donc 4 bits d'octet.
+
+1.
+
+1.1 Placement direct
+
+On peut trouver les 'Tags' en divisant le nombre de lignes de la memoire principale par le nombre d'ensembles. On a 1000 ensembles (egal a nombre de lignes; 1024 = 2^10) donc 10 bits pour les ensembles. Le nombre de 'Tags' revient donc a 64 000 / 1000 = 64 (2^6).
+
+
+1.2 Ensemble de 2 blocs
+
+Blocs de 2, donc on a 1000/2 = 500 ensembles, donc 2^9 (9 bits).
+On divise le nombre de lignes dans la memoire principale par le nombre d'ensembles pour obtenir
+les 'Tags': 64 000 / 500 = 128 Tags, donc 2^7 (7 bits).
+
+1.3 Ensemble de 4 blocs
+
+Blocs de 4, donc on a 1000/4 = 250 ensembles, donc 2^8 (8 bits).
+
+64 000 / 250 = 256 Tags, donc 2^8 (8 bits).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
